@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0">
+    <title>7. vježba</title>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+<style>
+
+
+.h1 {
+    text-align: center;
+    font-family: Adgasima;
+    font-size: 55px;
+    background-color: white;
+}
+
+.h2 {
+    text-align: center;
+    font-family: Adgasima;
+    background-color: white;
+}
+
+.p1 {
+    font-family: Adgasima;
+    font-size: 30px;
+    background-color: white;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    box-shadow: 1px 2px gray;
+    padding: 10px;
+    border: 10px black;
+}
+
+
+iframe {
+    width: 500px;
+    height: 500px;
+    align-items: center;
+}
+
+#f1 {
+    border: 10px rgb(179, 174, 174);
+    box-shadow: 1px 2px gray;
+    width: 300px;
+    height: 300px;
+
+}
+
+@media only screen and (max-width: 100px) {
+     body { 
+          background-color:rgba(255, 0, 221, 0.603);
+        }
+}
+
+.button {
+    align-items: center;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    
+}
+
+.button:hover {
+    background-color: #ca18b2;
+}
+
+</style>
+</head>
+
+<body 
+style="background-image: url(pozadina.jpg); 
+background-repeat: no-repeat;
+background-size: cover; ">
+
+    <h1 class="h1">Mia Matulić</h1>
+
+    <h2 class="h2">Vježba 7</h2>
+
+    <p class="p1">
+        Jedna od mojih najdražih pjesama
+    </p>
+    <audio src="Maneskin.mp3" controls></audio>
+    <p class="p1">
+        Korištenje iframe-a za moje najdraže knjige
+    </p>
+     
+    <ol>
+        <li><a href="slika1.jpg" target="f1">These Violent Delights</a></li>
+        <li><a href="slika2.jpg" target="f1">Before the Coffee Gets Cold</a></li>
+        <li><a href="slika3.jpg" target="f1">What Moves the Dead</a></li>
+    </ol>
+    <iframe name="f1"></iframe> <br>
+
+
+    <p class="p1">
+        Video mog prvog kuglanja
+    </p>
+    <video controls muted>
+        <source src="DSCN0394.MOV">
+    </video>
+    
+    <p class="p1">
+        SVG mace koristeći tag embed
+    </p>
+    <embed src="maca.svg">
+
+
+    <p class="p1">
+        Moj auto - Renault Twingo
+    </p>
+    <map name="mojauto">
+        <area shape="circle" coords="80, 185, 30" href="twingo.jpeg" target="f1">
+    </map>
+    <img src="twingo.jpeg" usemap="#mojauto"> <br>
+
+    
+    <button class="button" onclick="window.location.href='https://youtu.be/E8gmARGvPlI?si=WJsEbjXQjSArJz0u'">Najdraža božićna pjesma</button>
+</body>
+
+</html>
